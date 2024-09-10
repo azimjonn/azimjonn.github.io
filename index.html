@@ -4,71 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azimjon Urinov - Computer Scientist & ML Engineer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .intro {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #2980b9;
-        }
-        .links {
-            margin-top: 30px;
-        }
-        .links a {
-            margin-right: 15px;
-            color: #3498db;
-            text-decoration: none;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Azimjon Urinov</h1>
-        <p>Computer Scientist & Machine Learning Engineer</p>
+    <header class="warm-gradient text-white p-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Azimjon Urinov</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-yellow-200">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-200">About</a></li>
+                <li><a href="projects.html" class="hover:text-yellow-200">Projects</a></li>
+                <li><a href="research.html" class="hover:text-yellow-200">Research</a></li>
+                <li><a href="blog.html" class="hover:text-yellow-200">Blog</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-200">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <main>
-        <section class="intro">
-            <p>Welcome to my personal website! I'm a computer scientist specializing in deep learning and machine learning engineering. Currently based in Ulsan, South Korea, I'm passionate about pushing the boundaries of AI and its applications in solving real-world problems.</p>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section class="flex flex-col md:flex-row items-center mb-12">
+            <img src="profile-picture.jpg" alt="Azimjon Urinov" class="rounded-full w-48 h-48 object-cover mb-4 md:mb-0 md:mr-8">
+            <div>
+                <h2 class="text-3xl font-bold mb-2">Welcome to My Portfolio</h2>
+                <p class="text-xl">I'm a Computer Scientist specializing in Machine Learning and Deep Learning, currently pursuing my Bachelor's degree at Ulsan National Institute of Science and Technology.</p>
+            </div>
         </section>
-        
-        <section>
-            <a href="resume.html" class="cta-button">View My Resume</a>
+
+        <section class="mb-12 content-section">
+            <h3 class="section-title">Featured Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="project-card">
+                    <h4 class="project-title">Adapting LLMs to Uzbek Language</h4>
+                    <p>Research on adapting large language models like Mistral-7B, Mistral-12B, and LLaMA-8B to the Uzbek language.</p>
+                </div>
+                <div class="project-card">
+                    <h4 class="project-title">Cartouch Backend Development</h4>
+                    <p>Developed backend systems for ML model deployment using Django and FastAPI.</p>
+                </div>
+            </div>
         </section>
-        
-        <section class="links">
-            <a href="https://www.linkedin.com/in/azimjon-mehmonali" target="_blank">LinkedIn</a>
-            <a href="mailto:azimjon.ibn.mehmonali@gmail.com">Email</a>
-            <!-- Add more links as needed, e.g., GitHub, projects, blog, etc. -->
+
+        <section class="content-section">
+            <h3 class="section-title">Latest Blog Posts</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="blog-card">
+                    <h4 class="blog-title">Exploring Quantum Computing</h4>
+                    <p>My journey into the fascinating world of quantum computing and its potential applications.</p>
+                </div>
+                <div class="blog-card">
+                    <h4 class="blog-title">IoT: Connecting the Physical and Digital</h4>
+                    <p>Insights on the Internet of Things and its impact on our daily lives.</p>
+                </div>
+                <div class="blog-card">
+                    <h4 class="blog-title">Life as a CS Student in South Korea</h4>
+                    <p>Sharing my experiences and observations as an international student at UNIST.</p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="warm-gradient text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Azimjon Urinov. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="mailto:azimjon.ibn.mehmonali@gmail.com" class="hover:text-yellow-200 mr-4">Email</a>
+                <a href="https://www.linkedin.com/in/azimjon-mehmonali" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-200">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
